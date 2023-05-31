@@ -1,0 +1,84 @@
+[Version]
+signature="$WINDOWS NT$"
+W11 Cursors Dark HDPI v2.2 default By Jepri Creations
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Ani
+AddReg    = Scheme.Reg,Wreg
+
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Ani = 10,"%ANI_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%ANI_DIR%\%working%,%10%\%ANI_DIR%\%busy%,%10%\%CUR_DIR%\%precision%,%10%\%CUR_DIR%\%text%,%10%\%CUR_DIR%\%hand%,%10%\%CUR_DIR%\%unavailable%,%10%\%CUR_DIR%\%vert%,%10%\%CUR_DIR%\%horz%,%10%\%CUR_DIR%\%dgn1%,%10%\%CUR_DIR%\%dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%,%10%\%CUR_DIR%\%person%,%10%\%CUR_DIR%\%pin%"
+
+
+[Wreg]
+HKCU,"Control Panel\Cursors",,0x00020000,"%SCHEME_NAME%"
+HKCU,"Control Panel\Cursors",AppStarting,0x00020000,"%10%\%ANI_DIR%\%working%"
+HKCU,"Control Panel\Cursors",Arrow,0x00020000,"%10%\%CUR_DIR%\%pointer%"
+HKCU,"Control Panel\Cursors",crosshair,0x00020000,"%10%\%CUR_DIR%\%precision%"
+HKCU,"Control Panel\Cursors",precisionhair,0x00020000,"%10%\%CUR_DIR%\%precision%"
+HKCU,"Control Panel\Cursors",Hand,0x00020000,"%10%\%CUR_DIR%\%link%"
+HKCU,"Control Panel\Cursors",Help,0x00020000,"%10%\%CUR_DIR%\%help%"
+HKCU,"Control Panel\Cursors",IBeam,0x00020000,"%10%\%CUR_DIR%\%text%"
+HKCU,"Control Panel\Cursors",No,0x00020000,"%10%\%CUR_DIR%\%unavailable%"
+HKCU,"Control Panel\Cursors",NWPen,0x00020000,"%10%\%CUR_DIR%\%hand%"
+HKCU,"Control Panel\Cursors",SizeAll,0x00020000,"%10%\%CUR_DIR%\%move%"
+HKCU,"Control Panel\Cursors",SizeNESW,0x00020000,"%10%\%CUR_DIR%\%dgn2%"
+HKCU,"Control Panel\Cursors",SizeNS,0x00020000,"%10%\%CUR_DIR%\%vert%"
+HKCU,"Control Panel\Cursors",SizeNWSE,0x00020000,"%10%\%CUR_DIR%\%dgn1%"
+HKCU,"Control Panel\Cursors",SizeWE,0x00020000,"%10%\%CUR_DIR%\%horz%"
+HKCU,"Control Panel\Cursors",UpArrow,0x00020000,"%10%\%CUR_DIR%\%alternate%"
+HKCU,"Control Panel\Cursors",Wait,0x00020000,"%10%\%ANI_DIR%\%busy%"
+HKCU,"Control Panel\Cursors",Person,0x00020000,"%10%\%CUR_DIR%\%person%"
+HKCU,"Control Panel\Cursors",Pin,0x00020000,"%10%\%CUR_DIR%\%pin%"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Runonce\Setup\","",,"rundll32.exe shell32.dll,Control_RunDLL main.cpl @0,1"
+
+[Scheme.Cur]
+"..\base\pointer.cur"
+"..\base\help.cur"
+"..\base\precision.cur"
+"..\base\handwriting.cur"
+"..\base\unavailable.cur"
+"..\base\vert.cur"
+"..\base\horz.cur"
+"..\base\dgn1.cur"
+"..\base\dgn2.cur"
+"..\base\move.cur"
+"..\base\alternate.cur"
+"..\base\link.cur"
+"..\base\beam.cur"
+"..\base\pin.cur"
+"..\base\person.cur"
+
+[Scheme.Ani]
+"working.ani"
+"busy.ani"
+
+
+[Strings]
+CUR_DIR     = "Cursors\W11_dark_v2.2\base"
+ANI_DIR     = "Cursors\W11_dark_v2.2\default"
+SCHEME_NAME = "W11 Cursors Dark HDPI default by Jepri Creations"
+pointer		= "pointer.cur"
+help		= "help.cur"
+working		= "working.ani"
+busy		= "busy.ani"
+precision	= "precision.cur"
+hand		= "handwriting.cur"
+text		= "beam.cur"
+unavailable	= "unavailable.cur"
+vert		= "vert.cur"   
+horz		= "horz.cur"
+dgn1		= "dgn1.cur"
+dgn2		= "dgn2.cur"
+move		= "move.cur"
+alternate	= "alternate.cur"
+link		= "link.cur"
+person      = "person.cur"
+pin         = "pin.cur"
+
+
